@@ -17,6 +17,7 @@
   --filter-indent: 8px;
 
   --items: 4;
+  --linear-gradient: rgba(47, 48, 58, 0.4);
 }
 img {
   display: block;
@@ -38,6 +39,21 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+/* фоновое изображение  с градиентом */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+    url(../images/fon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #757575;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .body {
@@ -130,6 +146,10 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+/* иконка эмейл */
+.contact-current::before {
+  content: '';
 }
 
 .contact,
@@ -246,7 +266,32 @@ ul {
 .feature-sec {
   gap: 30px;
 }
-
+/* для иконок */
+.feature::before {
+  display: block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* иконки отдельно по классам */
+.antenna-icon::before {
+  background-image: url(../images/antenna.svg);
+  /* width: 70px; */
+}
+.oclock-icon::before {
+  background-image: url(../images/oclock.svg);
+}
+.diagram-icon::before {
+  background-image: url(../images/diagram.svg);
+}
+.astronaut-icon::before {
+  background-image: url(../images/astronaut.svg);
+}
 /* секция чем мы занимаемся */
 
 .content-tx {
@@ -401,6 +446,7 @@ ul {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
+
 .footer-item {
   display: block;
 }
@@ -441,4 +487,82 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+/* отступ присоединяйтесь */
+.foot-adress {
+  margin-right: 70px;
+}
+/* контейнеры в футерe */
+.foot-grey-style > .container {
+  display: flex;
+  align-items: baseline;
+}
+/* присоединяйтесь */
+.footer-tittle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* иконки соц сетей футер */
+
+.icon-footer-inst {
+  display: inline-block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../images/instagram.svg);
+  background-size: 20px;
+}
+.icon-footer-twitter {
+  display: inline-block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../images/twitter.svg);
+  background-size: 20px;
+}
+
+.icon-footer-fb {
+  display: inline-block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../images/facebook.svg);
+  background-size: 20px;
+}
+.icon-footer-in {
+  display: inline-block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../images/linkedin.svg);
+  background-size: 20px;
 }
