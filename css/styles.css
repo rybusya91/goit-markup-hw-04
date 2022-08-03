@@ -570,3 +570,7 @@ ul {
   background-image: url(../images/linkedin.svg);
   background-size: 20px;
 }
+.footer-social-network:hover,
+.footer-social-network:focus {
+  background-color: rgba(33, 150, 243, 1);
+}
