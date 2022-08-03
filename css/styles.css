@@ -148,14 +148,26 @@ ul {
   color: var(--accent-color);
 }
 /* иконка эмейл */
-.icon-post::before {
-  content: '';
-  background-image: url(../images/post.svg);
+.icon-header {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: #2196f3;
+  fill: currentColor;
+  margin-right: 10px;
 }
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-header:hover,
+.icon-header:focus,
+.icon-phone:hover,
+.icon-phone:focus {
+  color: var(--accent-color);
+}
+
 .contact,
 .contact-current {
   font-weight: 500;
