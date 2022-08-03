@@ -148,10 +148,14 @@ ul {
   color: var(--accent-color);
 }
 /* иконка эмейл */
-.contact-current::before {
+.icon-post::before {
   content: '';
+  background-image: url(../images/post.svg);
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #2196f3;
 }
-
 .contact,
 .contact-current {
   font-weight: 500;
